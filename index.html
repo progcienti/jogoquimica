@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Forca - Química</title>
+  <link rel="stylesheet" href="styles/style1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo da Forca - Química</h1>
+    <div id="wordDisplay" class="word-display"></div>
+    <div id="message"></div>
+    <div id="tentativasRestantes" class="tentativas-restantes"></div>
+    <input type="text" id="guessInput" maxlength="1" placeholder="Digite uma letra" onkeyup="handleKeyPress(event)">
+    <div id="wrongLetters" class="wrong-letters"></div>
+    <button onclick="resetGame()">Reiniciar Jogo</button>
+    <button id="nextQuestionButton" onclick="nextQuestion()" style="display: none;">Próxima Pergunta</button>
+  </div>
+
+  <script src="scripts/forca.js"></script>
+</body>
+</html>
